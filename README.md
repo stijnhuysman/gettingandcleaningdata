@@ -1,16 +1,16 @@
-# ? GETTING AND CLEANING DATA COURSE PROJECT?
-# ? by Stijn Huysman
+# GETTING AND CLEANING DATA COURSE PROJECT
+# by Stijn Huysman
 
 # OVERVIEW
-# ? Using data collected from the accelerometers from the Samsung Galaxy S?
-# ? smartphone, work with the data and make a clean data set, outputting the
-# ? resulting tidy data to a file named "tidy_data.txt".
-# ? See README.md for details.
+# Using data collected from the accelerometers from the Samsung Galaxy S
+# smartphone, work with the data and make a clean data set, outputting the
+# resulting tidy data to a file named "tidy_data.txt".
+# See README.md for details.
 ###############################################################################
 
 
 
-# script is using Dplyr library?
+# script is using Dplyr library
 
 library(dplyr)
 
@@ -92,8 +92,8 @@ humanActivity <- humanActivity[, columnsToKeep]
 ##############################################################################
 
 # replace activity values with named factor levels
-humanActivity$activity <- factor(humanActivity$activity,?
-?? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? levels = activities[, 1], labels = activities[, 2])
+humanActivity$activity <- factor(humanActivity$activity,
+ levels = activities[, 1], labels = activities[, 2])
 
 
 # Step 4 - Appropriately label the data set with descriptive variable names
